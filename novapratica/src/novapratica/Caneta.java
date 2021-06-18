@@ -17,6 +17,7 @@ public class Caneta {
         this.setCarga(100);
     }
 
+    // Getters and Setters
     public String getColor() {
         return color;
     }
