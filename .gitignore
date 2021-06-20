@@ -2,3 +2,6 @@
 *.xml
 *.mf
 *.properties
+/ContaBancaria/.gradle/
+/ContaBancaria/nbproject/private/
+/SimulacaoBancaria/nbproject/private/
