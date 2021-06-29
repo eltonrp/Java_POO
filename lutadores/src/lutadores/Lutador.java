@@ -2,16 +2,25 @@ package lutadores;
 
 public class Lutador {
     // Atributos
-    private String nome;
-    private String nacionalidade;
-    private int idade;
-    private float altura;
-    private float peso;
-    private String categoria;
-    private int vitorias;
-    private int derrotas;
-    private int empates;
-    
+    private String nome, nacionalidade, categoria;
+    private int idade, vitorias, derrotas, empates;
+    private float altura, peso;
+    // Métodos Públicos
+    public void apresentar() {
+        
+    }
+    public void status() {
+        
+    }
+    public void ganharLuta() {
+        this.setVitorias(this.getVitorias() + 1);
+    }
+    public void perderLuta() {
+        this.setDerrotas(this.getDerrotas() + 1);
+    }
+    public void empatarLuta() {
+        this.setEmpates(this.getEmpates() + 1);
+    }
     // -----Métodos Especiais-----
     // Método Construtor
     public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em) {
@@ -54,12 +63,23 @@ public class Lutador {
     }
     public void setPeso(float peso) {
         this.peso = peso;
+        this.setCategoria();
     }
     public String getCategoria() {
         return categoria;
     }
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    private void setCategoria() {
+        if (this.getPeso() < 52.2) {
+            this.categoria = "Inválida";
+        } else if (this.getPeso() <= 70.3) {
+            this.categoria = "Leve";
+        } else if (this.getPeso() <= 83.9) {
+            this.categoria = "Médio";
+        } else if (this.getPeso() <= 120.2) {
+            this.categoria = "Pesado";
+        } else {
+            this.categoria = "Inválida";
+        }
     }
     public int getVitorias() {
         return vitorias;
