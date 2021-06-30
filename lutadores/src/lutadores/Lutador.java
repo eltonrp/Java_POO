@@ -7,10 +7,20 @@ public class Lutador {
     private float altura, peso;
     // Métodos Públicos
     public void apresentar() {
-        
+        System.out.println("--------------------");
+        System.out.println("Chegou a hora!!! Apresentamos o lutador " + this.getNome());
+        System.out.println("Diretamente de " +  this.getNacionalidade());
+        System.out.println("Com " + this.getIdade() + " anos e " + this.getAltura() + " de altura");
+        System.out.println("Pesando " + this.getPeso() + "Kg");
+        System.out.println(this.getVitorias() + " vitórias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
     }
     public void status() {
-        
+        System.out.println(this.getNome() + " é um peso " + this.getCategoria());
+        System.out.println("Ganhou " + this.getVitorias() + " vezes");
+        System.out.println("Perdeu " + this.getDerrotas() + " vezes");
+        System.out.println("Empatou " + this.getEmpates() + " vezes");
     }
     public void ganharLuta() {
         this.setVitorias(this.getVitorias() + 1);
@@ -28,7 +38,7 @@ public class Lutador {
         this.nacionalidade = na;
         this.idade = id;
         this.altura = al;
-        this.peso = pe;
+        this.setPeso(pe);
         this.vitorias = vi;
         this.derrotas = de;
         this.empates = em;
