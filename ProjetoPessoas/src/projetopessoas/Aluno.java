@@ -21,4 +21,9 @@ public class Aluno extends Pessoa {
     public void setCurso(String curso) {
         this.curso = curso;
     }
+
+    @Override
+    public String toString() {
+        return "Aluno{" + "matricula=" + mat + ", curso=" + curso + ", nome="+this.getNome()+'}';
+    }
 }

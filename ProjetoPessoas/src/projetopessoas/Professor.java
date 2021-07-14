@@ -6,7 +6,7 @@ public class Professor extends Pessoa {
     private float salario;
 
     // Métodos Públicos
-    public receberAumento(float aum) {
+    public void receberAumento(float aum) {
         this.salario += aum;
     }
     // Métodos Especiais
