@@ -15,6 +15,14 @@ public class ExDeHeranca {
         a1.setIdade(28);
         a1.pagarMensalidade();
         System.out.println(a1.toString());
+        Bolsista b1 = new Bolsista();
+        b1.setNome("Araújo");
+        b1.setIdade(58);
+        b1.setBolsa(12.5f);
+        b1.setSexo("M");
+        b1.pagarMensalidade();
+        System.out.println(a1.toString());
+
     }
     
 }
