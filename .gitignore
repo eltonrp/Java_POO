@@ -24,3 +24,5 @@ ProjetoPessoas/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.j
 /Ex-de-heranca/nbproject/private/
 /Ex-de-heranca/build/
 *.jar
+/ReprReinoAnimal/nbproject/private/
+/RepresReinoAnimal/build/
