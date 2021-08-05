@@ -26,3 +26,5 @@ ProjetoPessoas/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.j
 *.jar
 /ReprReinoAnimal/nbproject/private/
 /RepresReinoAnimal/build/
+/ExercicoConceitosPoo/nbproject/private/
+/ExercicoConceitosPoo/build/
