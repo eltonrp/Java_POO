@@ -11,11 +11,11 @@ public class Video implements AcoesVideo {
     // Métodos da Interface
     @Override
     public void play() {
-        
+        this.reproduzindo = true;
     }
     @Override
     public void pause() {
-
+        this.reproduzindo = false;
     }
     @Override
     public void like() {
