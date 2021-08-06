@@ -16,7 +16,7 @@ public class Aluno extends Pessoa {
     public void setLogin(String login) {
         this.login = login;
     }
-    public int isTotAssistindo() {
+    public int getTotAssistindo() {
         return totAssistindo;
     }
     public void setTotAssistindo(int totAssistindo) {
